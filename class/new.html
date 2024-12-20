@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball</title>
+</head>
+<style>
+    .container{
+        width:75vw ;
+        height:60vh ;
+        background-color: blue;
+    }
+    .ball{
+        width:100px ;
+        height:100px ;
+        background-color: red;
+        border-radius: 70px;
+        animation: forx 5s linear infinite alternate , fory 2s cubic-bezier(0.95, 0.06, 1, 1) infinite alternate ;        
+        
+    }
+    @keyframes forx {
+        from{
+            transform: translateX(0%);
+        }
+        to{
+            transform: translateX(75vw);
+        }
+    }
+    @keyframes fory {
+        from{
+            transform: translateY(0%);
+        }
+        to{
+            transform: translateY(60vh);
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>

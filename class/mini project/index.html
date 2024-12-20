@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <!-- Bootstrap CSS for responsiveness -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">TravelWorld</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <form class="search-bar">
+                <input type="text" placeholder="Search">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Featured Destination -->
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Explore the Wonders of Santorini</h1>
+            <p>Breathtaking sunsets, whitewashed buildings, and sparkling blue waters await you.</p>
+            <a href="#" class="btn-discover">Discover More</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Popular Travel Destinations</h2>
+        <div class="row">
+            <!-- Destination Cards -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Paris">
+                    <h5>Paris, France</h5>
+                    <p>The city of love is known for its iconic Eiffel Tower, exquisite cuisine, and rich history.</p>
+                    <a href="#" class="btn-card">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Bali">
+                    <h5>Bali, Indonesia</h5>
+                    <p>Famous for its serene beaches, lush greenery, and vibrant culture.</p>
+                    <a href="#" class="btn-card">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="New York">
+                    <h5>New York, USA</h5>
+                    <p>Experience the hustle and bustle of the Big Apple, with its skyscrapers and world-class attractions.</p>
+                    <a href="#" class="btn-card">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Subscription -->
+    <div class="newsletter">
+        <div class="container text-center">
+            <h3>Stay Updated!</h3>
+            <p>Subscribe to our newsletter to receive the latest travel updates and tips.</p>
+            <form class="subscribe-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TravelWorld. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top">&#8679;</a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom Script -->
+    <script>
+        // Back to Top Button
+        const backToTop = document.getElementById("back-to-top");
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 100) {
+                backToTop.style.display = "block";
+            } else {
+                backToTop.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>

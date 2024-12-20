@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day of the Week</title>
+</head>
+
+<body>
+    <label for="dayInput">Enter a number (1-7):</label>
+    <input type="number" id="dayInput" min="1" max="7" placeholder="e.g., 3">
+    <button onclick="getDayOfWeek()">Show Day</button>
+    <p id="result"></p>
+
+    <script>
+        function getDayOfWeek() {
+            const dayNumber = parseInt(document.getElementById("dayInput").value, 10);
+            const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+            // Validate input
+            if (dayNumber >= 1 && dayNumber <= 7) {
+                const day = days[dayNumber - 1]; // Adjusting index as array starts from 0
+                document.getElementById("result").textContent = `The day is: ${day}`;
+            } else {
+                document.getElementById("result").textContent = "Please enter a valid number between 1 and 7.";
+            }
+        }
+    </script>
+</body>
+
+</html>

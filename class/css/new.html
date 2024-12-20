@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: blue;
+            width: 80vw;
+            height: 2000px;
+            margin: auto;
+        }
+        .box1 {
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            /* Absolute = browser top left */
+            /* position: sticky; */
+            
+        }
+        .box2 {
+            background-color: green;
+            height: 200px;
+            width: 200px;
+            position: sticky;
+            /* Sticky = fixed + relative */
+            top: 30px;
+                        
+        }
+        h1 {
+            background-color: yellow;
+            margin: 0;
+            position: absolute;
+        }
+        p {
+            color: #fff;
+            margin: 0;
+            padding: 10px;
+            text-align: justify;
+       }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>This is H1</h1>
+        <div class="container">
+            <div class="box1">
+                
+            </div>
+            <div class="box2">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel dolore labore in totam unde odit, fugiat perferendis laudantium expedita reiciendis. Corrupti adipisci odit neque soluta facilis necessitatibus eius nihil fugit?</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
